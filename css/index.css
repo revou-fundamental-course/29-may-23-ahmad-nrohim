@@ -112,9 +112,6 @@ header {
 }
 
 .hero {
-  /* background-image: url(/img/hero-background.png);
-  background-size: cover;
-  background-position: right; */
   padding: 5% 7%;
   height: 578px;
   box-sizing: border-box;
@@ -256,7 +253,7 @@ footer {
   height: 40vw;
   border: 2px solid black;
   background-size: cover;
-  background-image: url(/img/maps.png);
+  background-image: url(img/maps.png);
 }
 /* Message US  > Location */
 
