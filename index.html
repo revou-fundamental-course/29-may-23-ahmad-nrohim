@@ -33,19 +33,22 @@
     </header>
     <div class="slideshow-container">
       <div class="mySlides">
-        <img src="img/hero-background-1.jpg"/>
+        <img src="img/hero-background-1.jpg" />
       </div>
       <div class="mySlides">
         <img src="img/hero-background-2.jpg" />
       </div>
       <div class="mySlides">
-        <img src="img/hero-background-3.jpg"/>
+        <img src="img/hero-background-3.jpg" />
       </div>
       <div class="caption">
-        <h1 class="background-text">Hi<span id="hi"></span>, Welcome To Website</h1>
-        <p class="background-text p-b-0">Maju Bersama Trusmi Group Bersama Mencintai Budaya.</p>
+        <h1 class="background-text">
+          Hi<span id="hi"></span>, Welcome To Website
+        </h1>
+        <p class="background-text p-b-0">
+          Maju Bersama Trusmi Group Bersama Mencintai Budaya.
+        </p>
       </div>
-
     </div>
     <div class="container-content">
       <h1>Our Headquarter</h1>
@@ -64,10 +67,7 @@
         </div>
         <div class="headquarters-container-image">
           <div class="headquarters-image">
-            <img
-              src="img/headquarter/majalengka.png"
-              alt="Office Majalengka"
-            />
+            <img src="img/headquarter/majalengka.png" alt="Office Majalengka" />
           </div>
           <p>Majalengka</p>
         </div>
@@ -162,6 +162,22 @@
         },
         false
       );
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000);
+      }
     </script>
     <script src="js/scripts.js"></script>
   </body>
